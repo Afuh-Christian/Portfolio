@@ -2,6 +2,9 @@ import React from 'react'
 import Nav from '../NavC/Nav'
 import "./Home.css"
 
+import { NavLink } from "react-router-dom"
+
+
 const pics = [
   "Image/html.svg",
   "Image/css.svg",
@@ -51,12 +54,6 @@ function Home() {
            </li>
           </ul>
         </section>
-
-
-
-
-
-
         <section className="home2">
        <ul>
         <li className="h1">My Regular tech tools</li>
@@ -66,8 +63,8 @@ function Home() {
            
           </ul>
         </li>
-            <li className="btn">
-              <div>more tools</div>
+        <li>
+            <NavLink className="NavLink" to={"/skill"}>   more tools</NavLink>
         </li>
        </ul>
         </section>

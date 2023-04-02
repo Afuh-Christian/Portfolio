@@ -19,6 +19,10 @@
     font-weight: 600;
 }
 
+.nav > ul > li > Link{
+    text-decoration: none;
+}
+
 
 
 
