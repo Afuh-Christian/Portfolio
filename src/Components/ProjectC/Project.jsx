@@ -17,6 +17,16 @@ const projects = [
         , logo: "Image/projects/queen.svg", 
         link: "visit site "
       },
+      {
+        tool: {
+          name: "Next js", 
+          logo: "Image/nextjs.svg"
+        },
+        websitename: "Queenzee.com", 
+        description: "A site for selling milinary products such as designer  caps , bags , wallets etc world wide "
+        , logo: "Image/projects/queen.svg", 
+        link: "visit site "
+      },
     ]  
   },
 
@@ -27,7 +37,7 @@ const projects = [
 function Project() {
   return (
     <>
-      <Nav/>
+     
       <section className="project">
       <ul>
       {projects.map((projecttype) => (
@@ -38,8 +48,7 @@ function Project() {
                 <li className="type"><div>{projecttype.projectType}</div></li>
            <li>
              <ul>
-
-                    {/* ONe project */}
+                {/* ONe project */}
                     {projecttype.list.map((project) => (
                    <li>
                    <ul>

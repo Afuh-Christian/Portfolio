@@ -1,7 +1,15 @@
 import "./Nav.css"
-import React from 'react'
+import React, { useContext, useState } from 'react'
 
-import {NavLink} from "react-router-dom"
+import {NavLink, useNavigate} from "react-router-dom"
+import { NewContext } from "../../Pages/SharedLayout/SharedLayout"
+import { BsFillBrightnessHighFill } from "react-icons/bs"
+import { FaMoon , FaHome} from "react-icons/fa"
+import { GoProject } from "react-icons/go"
+import { FcAbout } from "react-icons/fc"
+import { MdContactPhone } from "react-icons/md"
+import { GiSkills } from "react-icons/gi"
+import {GrMenu , GrClose} from "react-icons/gr"
 
 function Nav() {
 
@@ -9,18 +17,80 @@ function Nav() {
     let result = !isActive ? { textDecoration: "none", color: "black" } : {textDecoration: "none", color: "rgb(159, 158, 158)" }
     return result
   }
+
+  const context = useContext(NewContext)
+  const [show, setShow] = useState(false)
+  const navigate = useNavigate()
+
+// Nav bar responsive 
+ function ShowBar(){
+  setShow(!show)
+}
+
+  const gotoHome = async () => {
+    await  ShowBar();
+    await navigate("/")
+  }
+
   return (
-  
-      <section className="nav">
-          <ul>
-        <li> <NavLink style={TextStyle} to="/">Home</NavLink></li>
-        <li> <NavLink style={TextStyle} to="/project">Projects</NavLink></li>
+  <>
+    <section className="nav"
+      style={{
+        "--boxShadowNav": "10px 10px 40px -20px rgba(0, 0, 0, 0.25)", 
+        "--navBackground": "white", 
+      }}
+      
+      
+    >
+      <ul>
+        <li className="navlist">
+        <ul>
+        <li> <NavLink style={TextStyle} to="/"> Home </NavLink></li>
+        <li> <NavLink style={TextStyle} to="/project">Projects </NavLink></li>
         <li> <NavLink style={TextStyle}  to="/about">About Me</NavLink></li>
         <li> <NavLink style={TextStyle} to="/contact">Contact</NavLink></li>
         <li> <NavLink style={TextStyle} to="/skill">Skills</NavLink></li>
         </ul>
+        </li>
+          <li className="hamberger"
+          onClick={ShowBar}
+          > {!show? <GrMenu/>:  <GrClose/> } 
+         
+          </li>
+        <li className="light_dark">
+          <div className="l_p">
+        
+            <div className="c"
+              onClick={
+                () => { context.setOn(!context.on) }
+            }
+              style={{transform: context.on? "translateX(66%)" : "translateX(0%)" , transitionDuration: "0.6s"}}
+            >
+              {!context.on ? <BsFillBrightnessHighFill /> : <FaMoon/>}
+
+            </div>
+          </div>
+        </li>
+      </ul>
       </section>
-      
+      <div className="mobileNav" style={
+        {
+          transform: !show ? "translateX(-400px)" : "translateX(0px)",
+          transitionDuration: "0.7s",
+
+          
+        }
+      }>
+      <ul >
+        <li> <NavLink style={TextStyle} onClick={ShowBar} to="/"> Home  <FaHome/> </NavLink></li>
+        <li> <NavLink style={TextStyle} onClick={ShowBar} to="/project">Projects <GoProject/> </NavLink></li>
+        <li> <NavLink style={TextStyle} onClick={ShowBar}  to="/about">About Me <FcAbout color="black"/></NavLink></li>
+        <li> <NavLink style={TextStyle} onClick={ShowBar} to="/contact">Contact   <MdContactPhone/>  </NavLink></li>
+        <li> <NavLink style={TextStyle} onClick={ShowBar} to="/skill">Skills  <GiSkills/></NavLink></li>
+        </ul>
+        </div>
+    
+      </>
   )
 }
 

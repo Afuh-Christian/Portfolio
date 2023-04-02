@@ -25,7 +25,7 @@ function Home() {
   return (
     <>
       
-    <Nav/>
+  
       <section className="home">
 
 

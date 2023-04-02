@@ -12,7 +12,6 @@ import AboutPage from './Pages/AboutPage';
 function App() {
   return (
     <>
-      
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<SharedLayout/>}>
@@ -25,17 +24,6 @@ function App() {
       </Routes>
       </BrowserRouter>
 
-
-
-   {/* <HomePage/> */}
-
-      {/* <ContactPage/> */}
-      {/* <ProjectPage/> */}
-      {/* <SkillsPage/> */}
-
-      {/* <Nav>
-    
-    </Nav> */}
       </>
   );
 }

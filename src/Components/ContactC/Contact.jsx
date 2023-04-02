@@ -6,7 +6,7 @@ import "./Contact.css"
 function Contact() {
   return (
     <>
-    <Nav/>
+
       <section className="contact">
         
       <ul>

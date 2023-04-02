@@ -118,3 +118,169 @@
    background-color: rgb(85, 83, 83);
    border-radius: 8px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:800px){  
+
+
+
+    .project {
+        display: grid;
+        place-items: center;
+        width: 100%;
+        padding-top: 200px;
+        padding-bottom: 100px;
+    }
+    .project > ul{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        width: 90%;
+    }
+    .project > ul > li.pID{
+
+    }
+    .project > ul > li.pID > ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .project > ul > li.pID > ul > li{
+        display: grid;
+        place-items: center;
+    }
+    .project > ul > li.pID > ul > li.type{
+     
+     /* width: fit-content; */
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    
+    }
+    .project > ul > li.pID > ul > li.type > div{
+        width: fit-content;
+        font-size: 23px;
+        font-weight: 600;
+        letter-spacing: 8px;
+        border-bottom-style: solid ;
+        border-bottom-width: 1px ;
+        padding-bottom: 5px;
+    
+    }
+    .project > ul > li.pID > ul > li > ul {
+        width: fit-content;
+        max-width: 90%;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        
+        
+    
+    }
+    .project > ul > li.pID > ul > li > ul > li{}
+    .project > ul > li.pID > ul > li > ul > li > ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        /* background-color: yellow; */
+        display: flex;
+        flex-direction: column;
+        gap:15px;
+     
+    }
+    .project > ul > li.pID > ul > li > ul > li > ul > li{}
+    .project > ul > li.pID > ul > li > ul > li > ul > li.h1{
+    
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      justify-content: center;
+    }
+    .project > ul > li.pID > ul > li > ul > li > ul > li.h1 > img{
+        width: 20px;
+        /* height: 30px; */
+    }
+    .project > ul > li.pID > ul > li > ul > li > ul > li.proj{}
+    .project > ul > li.pID > ul > li > ul > li > ul > li.proj > ul{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: grid;
+        place-items: center;
+        /* background-color: blue; */
+        padding: 20px 10px 20px 10px;
+        gap: 15px;
+        border-radius: 20px;
+        box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.25);
+        max-width: 300px;
+        
+    }
+    .project > ul > li.pID > ul > li > ul > li > ul > li.proj > ul > li{}
+    .project > ul > li.pID > ul > li > ul > li > ul > li.proj > ul > li.h2{
+        font-weight: 600;
+    }
+    .project > ul > li.pID > ul > li > ul > li > ul > li.proj > ul > li.txt{
+        width: 90%;
+        word-wrap: break-word;
+        font-size:15px;
+        text-align: center;
+    
+    }
+    .project > ul > li.pID > ul > li > ul > li > ul > li.proj > ul > li.ima{}
+    .project > ul > li.pID > ul > li > ul > li > ul > li.proj > ul > li.ima > img{}
+    .project > ul > li.pID > ul > li > ul > li > ul > li.proj > ul > li.btn > div{
+        color: white;
+        font-size:15px;
+       width: fit-content;
+       padding: 5px 10px 5px 10px;
+       background-color: rgb(85, 83, 83);
+       border-radius: 8px;
+    }
+    
+    
+    
+    
+
+
+}
+
+
+
+
+
+
+
+
+
+

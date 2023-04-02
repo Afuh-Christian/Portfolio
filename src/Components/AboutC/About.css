@@ -1,0 +1,7 @@
+.about{
+    /* margin-top: 300px; */
+    /* background-color: blue; */
+    height: 400px;
+    display: grid;
+    place-items: center;
+}

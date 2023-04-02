@@ -75,11 +75,75 @@ box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
 
 
 
-@media screen and (max-width:700px){
+@media screen and (max-width:800px){
+
+    .skills {
+        display: grid;
+        place-items: center;
+    }
+    .skills > ul {
+        padding: 160px 10px 100px 10px ;
+        margin: 0;
+        list-style: none;
+        max-width: 900px;
+        /* background-color: blue; */
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .skills > ul > li{
+        /* background-color: red; */
+    }
+ 
     .skills > ul > li.h1{
         text-align: center;
         letter-spacing: 2px;
         font-weight: 500;
-        font-size: 30px;
+        font-size: 25px;
     }
+    .skills > ul > li.list{}
+    .skills > ul > li.list > ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap:25px;
+    }
+    .skills > ul > li.list > ul > li{
+        /* background-color: yellow; */
+    }
+    .skills > ul > li.list > ul > li.lang_path{}
+    .skills > ul > li.list > ul > li.lang_path > ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:10px;
+    justify-content: center;
+    }
+    .skills > ul > li.list > ul > li.lang_path > ul > li{}
+    .skills > ul > li.list > ul > li.lang_path > ul > li.skill{
+    /* background-color: orange; */
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap:8px;
+    padding: 5px 10px 5px 10px ;
+    border-radius: 7px;
+    font-size: 16px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+    
+    }
+    .skills > ul > li.list > ul > li.lang_path > ul > li.skill > img{
+        width: 25px;
+    }
+    .skills > ul > li.list > ul > li.lang_path > ul > li.skill > div{}
+    
+    
+
+
 }
