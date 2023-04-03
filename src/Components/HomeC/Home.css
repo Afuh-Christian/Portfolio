@@ -3,11 +3,12 @@
 }
 
 .home {
-    background-color: var(--navBackground); 
+    background-color: var(--bodyBackground); 
       color: var(--navTextColor);
- 
+  height: var(--bodyHeight);
   width: 100%;
-  padding-top: 200px;
+  padding-top: 180px;
+  padding-bottom: 80px;
 }
 .home > .home1{
     width: 100%;
@@ -84,7 +85,7 @@ width: 200px;
     display: grid;
     place-items: center; 
     margin-top:50px;
-    padding-bottom: 200px;
+    /* padding-bottom: 200px; */
 }
 .home > .home2 > ul{
     margin: 0; 
@@ -125,7 +126,7 @@ width: 200px;
 
 .NavLink:hover{
     background-color:var(--navTextHighlightColor);
-    color:var(--navBackground);
+    color:var(--bodyBackground);
     font-size: 16px;
     padding: 8px 11px 11px 11px;
 }
@@ -206,9 +207,11 @@ width: 200px;
     
     .home {
       width: 100%;
-      padding-top: 140px;
+      height:var(--bodyHeight);
       display: grid;
-        place-items: center; 
+     place-items: center; 
+     padding-top: 80px;
+     padding-bottom: 80px;
     }
     .home > .home1{
         width: 90%;
@@ -283,8 +286,8 @@ width: 200px;
         width: 90%; 
         display: grid;
         place-items: center; 
-        margin-top:40px;
-        padding-bottom: 200px;
+        /* margin-top:0px; */
+        /* padding-bottom: 200px; */
     }
     .home > .home2 > ul{
         margin: 0; 
@@ -324,7 +327,7 @@ width: 200px;
     
     .NavLink:hover{
         background-color:var(--navTextHighlightColor);
-        color:var(--navBackground);
+        color:var(--bodyBackground);
         font-size: 16px;
         padding: 8px 11px 11px 11px;
     }
@@ -422,7 +425,7 @@ width: 200px;
     
     .NavLink:hover{
         background-color:var(--navTextHighlightColor);
-        color:var(--navBackground);
+        color:var(--bodyBackground);
         font-size: 13px;
         padding: 6px 9px 9px 9px;
     }

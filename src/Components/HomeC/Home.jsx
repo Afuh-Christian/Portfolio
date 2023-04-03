@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Nav from '../NavC/Nav'
 import "./Home.css"
 
 import { NavLink } from "react-router-dom"
 import { BsGithub, BsLinkedin } from 'react-icons/bs'
+import { NewContext } from '../../Pages/SharedLayout/SharedLayout'
 
 
 const pics = [
@@ -25,23 +26,21 @@ const pics = [
 function Home() {
   const navTextColor = "black"
   const navTextHighlightColor = "rgb(159, 158, 158)"
+
+
+  const context = useContext(NewContext)
+
+  console.log(context.color_mode)
+  console.log(context.color_mode["--navTextColor"])
+  console.log(context.color_mode["--navTextHighlightColor"])
   return (
     <>
       
   
       <section className="home"
         style={{
-        
-      "--boxShadowNav": "10px 10px 40px -20px rgba(0, 0, 0, 0.25)", 
-      "--navBackground": "white", 
-      "--navTextColor":navTextColor,
-      "--navTextHighlightColor": navTextHighlightColor, 
-      "--btnbackground":" rgb(222, 221, 221)", 
-      "--navShadow": " 10px 10px 20px -10px rgba(0, 0, 0, 0.25)",
-      "--navItemLineColor": " rgb(205, 203, 203)",
-      "--toggle_dark_light_mode_P_background":" rgb(244, 244, 244)",
-      "--toggle_dark_light_mode_C_background":"rgb(155, 154, 154)",
-      "--toggle_dark_light_mode_P_border":" rgb(243, 243, 243)",
+          "--bodyHeight": `${context.windowD.height}px`, 
+        ...context.color_mode
       }}
       >
 

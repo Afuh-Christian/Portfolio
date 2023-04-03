@@ -1,13 +1,15 @@
 
 
 .project {
-    background-color: var(--navBackground); 
+    background-color: var(--bodyBackground); 
     color: var(--navTextColor);
+    height:var(--bodyHeight);
+    overflow-y: auto;
     display: grid;
     place-items: center;
     width: 100%;
-    padding-top: 200px;
-    padding-bottom: 100px;
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
 .project > ul{
     padding: 0;
@@ -167,13 +169,14 @@
 
 
     .project {
-        background-color: var(--navBackground); 
+        background-color: var(--bodyBackground); 
         color: var(--navTextColor);
+        height:var(--bodyHeight);
         display: grid;
         place-items: center;
         width: 100%;
-        padding-top: 130px;
-        padding-bottom: 100px;
+        padding-top: 120px;
+        padding-bottom: 50px;
     }
     .project > ul{
         padding: 0;

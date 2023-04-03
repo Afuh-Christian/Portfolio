@@ -1,6 +1,7 @@
 import "./Skills.css"
 
-import React from 'react'
+import React, { useContext } from 'react'
+import { NewContext } from "../../Pages/SharedLayout/SharedLayout"
 
 const skills = [
     {
@@ -123,31 +124,15 @@ const skills = [
 
 
 function Skills() {
-    const navTextColor = "black"
-    const navTextHighlightColor = "rgb(159, 158, 158)"
+
+    const context = useContext(NewContext)
+
   return (
       <section className="skills_parent">
           <section className="skills"
-            style={{
-                "--boxShadowNav": "10px 10px 40px -20px rgba(0, 0, 0, 0.25)", 
-                "--navBackground": "white", 
-                "--navTextColor":navTextColor,
-                "--navTextHighlightColor": navTextHighlightColor, 
-                "--btnbackground":" rgb(222, 221, 221)", 
-                "--navShadow": " 10px 10px 20px -10px rgba(0, 0, 0, 0.25)",
-                "--navItemLineColor": " rgb(205, 203, 203)",
-                "--toggle_dark_light_mode_P_background":" rgb(244, 244, 244)",
-                "--toggle_dark_light_mode_C_background":"rgb(155, 154, 154)",
-                "--toggle_dark_light_mode_P_border":" rgb(243, 243, 243)",
-                "--contact_background": " rgb(250, 250, 250)",              
-                "--project_link_btn_background":" rgb(85, 83, 83)",
-                 "--project_link_btn_color": "white",
-                "--project_single_background_Shadow":"10px 10px 20px 5px rgba(0, 0, 0, 0.25)",
-                 "--project_single_background": "white",
-                
-                 
-                 "--single_skill_background":"aliceblue",
-                 "--single_skill_shadow":"10px 10px 20px rgba(0, 0, 0, 0.25)",
+              style={{
+                "--bodyHeight": `${context.windowD.height}px`,
+                ...context.color_mode
               }}
           >
               <ul>

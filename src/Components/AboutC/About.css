@@ -1,7 +1,8 @@
 .about{
     /* margin-top: 300px; */
-    /* background-color: blue; */
-    height: 400px;
+    background-color: blue;
+    /* height:800px; */
+    height:var(--bodyHeight);
     display: grid;
     place-items: center;
 }

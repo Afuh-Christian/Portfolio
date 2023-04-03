@@ -1,8 +1,9 @@
 .contact {
-    background-color: var(--navBackground); 
+    height:var(--bodyHeight);
+    background-color: var(--bodyBackground); 
     color: var(--navTextColor);
-
-    padding-top: 150px;
+    
+    /* padding-top: 120px; */
     display: grid;
     place-items: center;
 }
@@ -115,9 +116,10 @@
 
 
     .contact {
-        background-color: var(--navBackground); 
+        background-color: var(--bodyBackground); 
         color: var(--navTextColor);
-        padding-top: 120px;
+        height: var(--bodyHeight);
+        padding-top: 0px;
         display: grid;
         place-items: center;
     }

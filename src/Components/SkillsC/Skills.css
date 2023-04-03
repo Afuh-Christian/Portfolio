@@ -2,11 +2,12 @@
 
 
 .skills {
-    background-color: var(--navBackground); 
+    background-color: var(--bodyBackground); 
     color: var(--navTextColor);
+    height:var(--bodyHeight);
     display: grid;
     place-items: center;
-    height: 900px;
+    
 }
 .skills > ul {
     padding: 0px 10px 100px 10px ;
@@ -84,12 +85,12 @@ box-shadow: var(--single_skill_shadow);
 @media screen and (max-width:800px){
 
     .skills {
-        background-color: var(--navBackground); 
+        background-color: var(--bodyBackground); 
         color: var(--navTextColor);
         display: grid;
         place-items: center;
-        height: 900px;
-    }
+        height:var(--bodyHeight);
+        }
     .skills > ul {
         padding: 0px 10px 100px 10px ;
         margin: 0;
@@ -161,11 +162,11 @@ box-shadow: var(--single_skill_shadow);
 
 @media screen and (max-width:450px) {
     .skills {
-        background-color: var(--navBackground); 
+        background-color: var(--bodyBackground); 
         color: var(--navTextColor);
         display: grid;
         place-items: center;
-        height: auto;
+        height:var(--bodyHeight);
     }
     .skills > ul {
         padding: 120px 10px 100px 10px ;

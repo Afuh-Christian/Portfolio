@@ -14,7 +14,7 @@ import { FiMenu  } from "react-icons/fi"
 function Nav() {
 
 
-
+  const context = useContext(NewContext)
 
 
 
@@ -23,11 +23,11 @@ function Nav() {
   const navTextHighlightColor = "rgb(159, 158, 158)"
 
   const TextStyle = ({ isActive }) => {
-    let result = !isActive ? { textDecoration: "none", color: navTextColor } : {textDecoration: "none", color: navTextHighlightColor }
+    let result = !isActive ? { textDecoration: "none", color: context.color_mode["--navTextColor"] } : {textDecoration: "none", color: context.color_mode["--navTextHighlightColor"] }
     return result
   }
 
-  const context = useContext(NewContext)
+
   const [show, setShow] = useState(false)
   const navigate = useNavigate()
 
@@ -36,24 +36,13 @@ function Nav() {
   setShow(!show)
 }
 
-  const gotoHome = async () => {
-    await  ShowBar();
-    await navigate("/")
-  }
+
 
   return (
   <>
     <section className="nav"
-      style={{
-        "--boxShadowNav": "10px 10px 40px -20px rgba(0, 0, 0, 0.25)", 
-        "--navBackground": "white", 
-        "--navTextColor":navTextColor,
-        "--navTextHighlightColor":"",
-        "--navShadow": " 10px 10px 20px -10px rgba(0, 0, 0, 0.25)",
-        "--navItemLineColor": " rgb(205, 203, 203)",
-        "--toggle_dark_light_mode_P_background":" rgb(244, 244, 244)",
-        "--toggle_dark_light_mode_C_background":"rgb(155, 154, 154)",
-        "--toggle_dark_light_mode_P_border":" rgb(243, 243, 243)",
+        style={{
+          ...context.color_mode
       }}
       
       
@@ -91,13 +80,7 @@ function Nav() {
       </section>
       <div className="mobileNav" style={
         {
-            "--boxShadowNav": "10px 10px 40px -20px rgba(0, 0, 0, 0.25)", 
-          "--navBackground": "white", 
-          "--navShadow": " 10px 10px 20px -10px rgba(0, 0, 0, 0.25)",
-          "--navItemLineColor": " rgb(205, 203, 203)",
-          "--toggle_dark_light_mode_P_background":" rgb(244, 244, 244)",
-          "--toggle_dark_light_mode_C_background":"rgb(155, 154, 154)",
-          "--toggle_dark_light_mode_P_border":" rgb(243, 243, 243)",
+          ...context.color_mode, 
             
           transform: !show ? "translateX(-400px)" : "translateX(0px)",
           transitionDuration: "0.7s",
