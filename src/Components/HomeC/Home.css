@@ -3,6 +3,9 @@
 }
 
 .home {
+    background-color: var(--navBackground); 
+      color: var(--navTextColor);
+ 
   width: 100%;
   padding-top: 200px;
 }
@@ -45,7 +48,7 @@ width: 200px;
 }
 .home > .home1 > ul > li > ul > li {}
 .home > .home1 > ul > li > ul > li.h1 {
-    font-weight: 700; 
+    font-weight: 700;
     font-size: 40px;
     max-width: 500px;
 }
@@ -62,24 +65,9 @@ width: 200px;
     display: flex;  
     gap: 20px; 
     margin: 20px 0px 0px 0px ; 
+    font-size: 27px;
+    
 }
-.home > .home1 > ul > li > ul > li.git_ln > img{
-
-    width: 30px ; 
-    height: 50px; 
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -116,7 +104,7 @@ width: 200px;
     width: fit-content; 
     border-bottom-style: solid;
     border-width: 1px;
-    border-color: rgb(169, 169, 169);
+    border-color:var(--navItemLineColor);
     padding-bottom: 3px;
 }
 
@@ -124,18 +112,20 @@ width: 200px;
 .NavLink{
     width: fit-content;
     text-decoration: none; 
-    color : black;
-    background-color: rgb(222, 221, 221);
+    color : var(--navTextColor);
+    background-color:var(--btnbackground);
+    /* background-color: var(--navTextHighlightColor); */
     padding: 7px 10px 10px 10px;
     border-radius: 8px;
     font-size: 15px;
     cursor: pointer;
-    box-shadow: 10px 10px 20px -10px rgba(0, 0, 0, 0.25);
+    /* box-shadow: 10px 10px 20px -10px rgba(0, 0, 0, 0.25); */
+    box-shadow:var(--navShadow);
 }
 
 .NavLink:hover{
-    background-color: rgb(159, 158, 158);
-    color:white;
+    background-color:var(--navTextHighlightColor);
+    color:var(--navBackground);
     font-size: 16px;
     padding: 8px 11px 11px 11px;
 }
@@ -276,25 +266,9 @@ width: 200px;
         display: flex;  
         gap: 20px; 
         margin: 20px 0px 0px 0px ; 
+        font-size: 25px;
+        
     }
-    .home > .home1 > ul > li > ul > li.git_ln > img{
-    
-        width: 30px ; 
-        height: 50px; 
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     
     
@@ -338,21 +312,23 @@ width: 200px;
     .NavLink{
         width: fit-content;
         text-decoration: none; 
-        color : black;
-        background-color: rgb(222, 221, 221);
+        color : var(--navTextColor);
+        background-color:var(--btnbackground);
         padding: 7px 10px 10px 10px;
         border-radius: 8px;
         font-size: 15px;
         cursor: pointer;
-        box-shadow: 10px 10px 20px -10px rgba(0, 0, 0, 0.25);
-    }
+        box-shadow:var(--navShadow);    }
+
+   
     
     .NavLink:hover{
-        background-color: rgb(159, 158, 158);
-        color:white;
+        background-color:var(--navTextHighlightColor);
+        color:var(--navBackground);
         font-size: 16px;
         padding: 8px 11px 11px 11px;
     }
+ 
     
     
     
@@ -379,3 +355,75 @@ width: 200px;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:450px) { 
+
+
+    .home > .home1 > ul > li > ul > li {}
+    .home > .home1 > ul > li > ul > li.h1 {
+        font-weight: 700; 
+        font-size: 20px;
+        max-width: 500px;
+    }
+    
+    .home > .home1 > ul > li > ul > li.txt {
+        max-width: 90%;
+        font-size: 15px;
+        /* background-color: blue;  */
+    }
+    .home > .home1 > ul > li > ul > li.txt >  span{
+        font-weight: 630; 
+        font-size: 17px;
+    }
+    .home > .home1 > ul > li > ul > li.git_ln {
+        display: flex;  
+        gap: 20px; 
+        margin: 20px 0px 0px 0px ; 
+        font-size: 23px;
+        
+    }
+
+    .home > .home2 > ul > li > ul > li > img{
+        width: 25px;
+    }
+
+
+
+
+    .NavLink{
+        width: fit-content;
+        text-decoration: none; 
+        color : var(--navTextColor);
+        background-color:var(--btnbackground);
+        padding: 5px 8px 8px 8px;
+        border-radius: 8px;
+        font-size: 11px;
+        cursor: pointer;
+        box-shadow:var(--navShadow);    }
+
+   
+    
+    .NavLink:hover{
+        background-color:var(--navTextHighlightColor);
+        color:var(--navBackground);
+        font-size: 13px;
+        padding: 6px 9px 9px 9px;
+    }
+}

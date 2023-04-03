@@ -7,14 +7,23 @@ import { BsFillBrightnessHighFill } from "react-icons/bs"
 import { FaMoon , FaHome} from "react-icons/fa"
 import { GoProject } from "react-icons/go"
 import { FcAbout } from "react-icons/fc"
-import { MdContactPhone } from "react-icons/md"
+import { MdContactPhone , MdClose } from "react-icons/md"
 import { GiSkills } from "react-icons/gi"
-import {GrMenu , GrClose} from "react-icons/gr"
+import { FiMenu  } from "react-icons/fi"
 
 function Nav() {
 
+
+
+
+
+
+  
+  const navTextColor = "black"
+  const navTextHighlightColor = "rgb(159, 158, 158)"
+
   const TextStyle = ({ isActive }) => {
-    let result = !isActive ? { textDecoration: "none", color: "black" } : {textDecoration: "none", color: "rgb(159, 158, 158)" }
+    let result = !isActive ? { textDecoration: "none", color: navTextColor } : {textDecoration: "none", color: navTextHighlightColor }
     return result
   }
 
@@ -38,6 +47,13 @@ function Nav() {
       style={{
         "--boxShadowNav": "10px 10px 40px -20px rgba(0, 0, 0, 0.25)", 
         "--navBackground": "white", 
+        "--navTextColor":navTextColor,
+        "--navTextHighlightColor":"",
+        "--navShadow": " 10px 10px 20px -10px rgba(0, 0, 0, 0.25)",
+        "--navItemLineColor": " rgb(205, 203, 203)",
+        "--toggle_dark_light_mode_P_background":" rgb(244, 244, 244)",
+        "--toggle_dark_light_mode_C_background":"rgb(155, 154, 154)",
+        "--toggle_dark_light_mode_P_border":" rgb(243, 243, 243)",
       }}
       
       
@@ -54,7 +70,7 @@ function Nav() {
         </li>
           <li className="hamberger"
           onClick={ShowBar}
-          > {!show? <GrMenu/>:  <GrClose/> } 
+          > {!show ? <FiMenu /> : <MdClose />} 
          
           </li>
         <li className="light_dark">
@@ -75,6 +91,14 @@ function Nav() {
       </section>
       <div className="mobileNav" style={
         {
+            "--boxShadowNav": "10px 10px 40px -20px rgba(0, 0, 0, 0.25)", 
+          "--navBackground": "white", 
+          "--navShadow": " 10px 10px 20px -10px rgba(0, 0, 0, 0.25)",
+          "--navItemLineColor": " rgb(205, 203, 203)",
+          "--toggle_dark_light_mode_P_background":" rgb(244, 244, 244)",
+          "--toggle_dark_light_mode_C_background":"rgb(155, 154, 154)",
+          "--toggle_dark_light_mode_P_border":" rgb(243, 243, 243)",
+            
           transform: !show ? "translateX(-400px)" : "translateX(0px)",
           transitionDuration: "0.7s",
 

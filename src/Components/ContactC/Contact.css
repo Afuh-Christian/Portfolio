@@ -1,5 +1,8 @@
 .contact {
-    padding-top: 200px;
+    background-color: var(--navBackground); 
+    color: var(--navTextColor);
+
+    padding-top: 150px;
     display: grid;
     place-items: center;
 }
@@ -33,9 +36,9 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
-    background-color: rgb(250, 250, 250);
+    background-color:var(--contact_background);
     padding: 70px;
-    box-shadow: 10px 10px 30px -15px rgba(0, 0, 0, 0.25);
+    box-shadow: var(--navShadow);
    
 }
 .contact > ul > li > ul > li {}
@@ -57,11 +60,10 @@
 
 }
 
-.contact > ul > li >ul > li >  ul > li.txt > div > img{
-    width: 19px;
-    position: relative;
-    top: 2px;
-    left: 5px;
+/* .contact > ul > li >ul > li >  ul > li.txt > div > img{ */
+.contact > ul > li >ul > li >  ul > li.txt > div > .faphone{
+   font-size: 16px;
+   margin-left: 10px;
 }
 
 .contact > ul > li >ul > li >  ul > li > div {}
@@ -69,6 +71,7 @@
     width: 30px;
     border-bottom-style: solid;
     border-bottom-width: 1px;
+    border-color: var(--navTextColor);
     padding-bottom: 2px;
 }
 .contact > ul > li > ul > li >  ul > li.ima > div{
@@ -77,6 +80,7 @@
     width: fit-content;
     border-bottom-style: solid;
     border-bottom-width: 1px;
+    border-color: var(--navTextColor);
     padding-bottom: 2px;
 }
 .contact > ul > li > ul > li >  ul > li.ima > div > img{
@@ -90,6 +94,7 @@
 .contact > ul > li > ul > li > ul > li > ul > li {
     border-bottom-style: solid;
     border-bottom-width: 1px;
+    border-color: var(--navTextColor);
     padding-bottom: 2px;
 }
 
@@ -110,7 +115,9 @@
 
 
     .contact {
-        padding-top: 150px;
+        background-color: var(--navBackground); 
+        color: var(--navTextColor);
+        padding-top: 120px;
         display: grid;
         place-items: center;
     }
@@ -144,10 +151,10 @@
         display: flex;
         flex-direction: column;
         gap: 50px;
-        background-color: rgb(250, 250, 250);
-        padding: 20px;
-        box-shadow: 10px 10px 30px -15px rgba(0, 0, 0, 0.25);
-        font-size:20px;
+        background-color:var(--contact_background);
+    padding: 10px;
+    box-shadow: var(--navShadow);
+     font-size:20px;
     }
     .contact > ul > li > ul > li {}
     .contact > ul > li > ul > li > ul  {
@@ -164,16 +171,15 @@
         width: fit-content;
         border-bottom-style: solid;
         border-bottom-width: 1px;
+        border-color: var(--navTextColor);
         padding-bottom: 2px;
     
     }
     
-    .contact > ul > li >ul > li >  ul > li.txt > div > img{
-        width: 19px;
-        position: relative;
-        top: 2px;
-        left: 5px;
-    }
+    .contact > ul > li >ul > li >  ul > li.txt > div > .faphone{
+        font-size: 15px;
+        margin-left: 10px;
+     }
     
     .contact > ul > li >ul > li >  ul > li > div {}
     .contact > ul > li > ul > li > ul > li.ima > img{
@@ -187,6 +193,7 @@
         gap: 20px;
         width: fit-content;
         border-bottom-style: solid;
+        border-color: var(--navTextColor);
         border-bottom-width: 1px;
         padding-bottom: 2px;
     }
@@ -204,12 +211,40 @@
     .contact > ul > li > ul > li > ul > li > ul > li {
         border-bottom-style: solid;
         border-bottom-width: 1px;
+        border-color: var(--navTextColor);
         padding-bottom: 2px;
     }
     
-    
-    
-    
-       
-    
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:500px) {
+    .contact > ul > li > ul {
+        padding: 0; 
+        margin: 0 ; 
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        background-color:var(--contact_background);
+    padding: 10px;
+    box-shadow: var(--navShadow);
+     font-size:15px;
+    }
+
+
+    .contact > ul > li >ul > li >  ul > li.txt > div > .faphone{
+        font-size: 13px;
+        margin-left: 10px;
+     }
+
 }
