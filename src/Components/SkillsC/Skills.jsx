@@ -128,10 +128,16 @@ function Skills() {
     const context = useContext(NewContext)
 
   return (
-      <section className="skills_parent">
+      <section className="skills_parent" style={{
+        ...context.color_mode,
+          "--bodyHeight": `${context.windowD.height}px`,
+        //   height: `${context.windowD.height}px`, 
+        // backgroundColor: context.color_mode["--body"]
+        
+    }}>
           <section className="skills"
               style={{
-                "--bodyHeight": `${context.windowD.height}px`,
+                
                 ...context.color_mode
               }}
           >
@@ -163,6 +169,7 @@ function Skills() {
               </ul>
             </section>
       </section>
+     
   )
 }
 

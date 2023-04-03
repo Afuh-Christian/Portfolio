@@ -1,16 +1,22 @@
 
 
+.skills_parent{
+    height:var(--bodyHeight);
+    background-color: var(--bodyBackground); 
+}
+
+
 
 .skills {
     background-color: var(--bodyBackground); 
     color: var(--navTextColor);
-    height:var(--bodyHeight);
+    /* height:var(--bodyHeight); */
     display: grid;
     place-items: center;
     
 }
 .skills > ul {
-    padding: 0px 10px 100px 10px ;
+    padding: 140px 10px 100px 10px ;
     margin: 0;
     list-style: none;
     max-width: 900px;
@@ -83,16 +89,19 @@ box-shadow: var(--single_skill_shadow);
 
 
 @media screen and (max-width:800px){
-
+    .skills_parent{
+        height:var(--bodyHeight);
+        background-color: var(--bodyBackground); 
+    }
     .skills {
         background-color: var(--bodyBackground); 
         color: var(--navTextColor);
         display: grid;
         place-items: center;
-        height:var(--bodyHeight);
+        /* height:var(--bodyHeight); */
         }
     .skills > ul {
-        padding: 0px 10px 100px 10px ;
+        padding: 100px 10px 100px 10px ;
         margin: 0;
         list-style: none;
         max-width: 900px;
@@ -161,12 +170,16 @@ box-shadow: var(--single_skill_shadow);
 
 
 @media screen and (max-width:450px) {
+    .skills_parent{
+        height:var(--bodyHeight);
+        background-color: var(--bodyBackground); 
+    }
     .skills {
         background-color: var(--bodyBackground); 
         color: var(--navTextColor);
         display: grid;
         place-items: center;
-        height:var(--bodyHeight);
+        /* height:var(--bodyHeight); */
     }
     .skills > ul {
         padding: 120px 10px 100px 10px ;

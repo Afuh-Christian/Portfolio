@@ -40,12 +40,14 @@ function Project() {
   const context = useContext(NewContext)
   return (
     <>
-     
+      <section className="project_parent"
+       style={{
+        "--bodyHeight": `${context.windowD.height}px`,
+        ...context.color_mode
+    }}
+      >
       <section className="project"
-        style={{
-          "--bodyHeight": `${context.windowD.height}px`,
-          ...context.color_mode
-      }}
+       
       >
       <ul>
       {projects.map((projecttype) => (
@@ -86,7 +88,8 @@ function Project() {
 
       ) )}
     </ul>
-</section>
+        </section>
+        </section>
       
  
     </>

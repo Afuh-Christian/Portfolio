@@ -1,17 +1,23 @@
 
+.project_parent{
+    height:var(--bodyHeight);
+    background-color: var(--bodyBackground); 
+
+}
 
 .project {
     background-color: var(--bodyBackground); 
     color: var(--navTextColor);
-    height:var(--bodyHeight);
-    overflow-y: auto;
+    height: auto;
     display: grid;
     place-items: center;
     width: 100%;
-    padding-top: 100px;
+    padding-top: 160px;
     padding-bottom: 50px;
 }
 .project > ul{
+    overflow-y: none;
+    background-color: var(--bodyBackground); 
     padding: 0;
     margin: 0;
     list-style: none;
@@ -28,6 +34,7 @@
     display: flex;
     flex-direction: column;
     gap: 70px;
+        background-color: var(--bodyBackground); 
 }
 .project > ul > li.pID > ul > li{
     display: grid;
@@ -172,13 +179,14 @@
         background-color: var(--bodyBackground); 
         color: var(--navTextColor);
         height:var(--bodyHeight);
-        display: grid;
-        place-items: center;
+         display: flex;
+         flex-direction: column;
         width: 100%;
-        padding-top: 120px;
+        padding-top: 110px;
         padding-bottom: 50px;
     }
     .project > ul{
+        background-color: var(--bodyBackground); 
         padding: 0;
         margin: 0;
         list-style: none;
@@ -191,6 +199,7 @@
 
     }
     .project > ul > li.pID > ul {
+        background-color: var(--bodyBackground); 
         padding: 0;
         margin: 0;
         list-style: none;

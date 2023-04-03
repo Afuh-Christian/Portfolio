@@ -2,13 +2,23 @@
 
 }
 
+
+.home_parent {
+    background-color: var(--bodyBackground); 
+    color: var(--navTextColor);
+height: var(--bodyHeight);
+}
+
+
+
+
 .home {
     background-color: var(--bodyBackground); 
       color: var(--navTextColor);
-  height: var(--bodyHeight);
+  /* height: var(--bodyHeight); */
   width: 100%;
-  padding-top: 180px;
-  padding-bottom: 80px;
+  padding-top: 150px;
+  padding-bottom: 50px;
 }
 .home > .home1{
     width: 100%;
@@ -207,11 +217,12 @@ width: 200px;
     
     .home {
       width: 100%;
-      height:var(--bodyHeight);
+      /* height:var(--bodyHeight); */
       display: grid;
      place-items: center; 
-     padding-top: 80px;
-     padding-bottom: 80px;
+     padding-top: 150px;
+     padding-bottom: 50px;
+    
     }
     .home > .home1{
         width: 90%;
@@ -378,7 +389,10 @@ width: 200px;
 
 @media screen and (max-width:450px) { 
 
-
+    .home {
+        padding-top:100px ;
+        padding-bottom: 50px;
+    }
     .home > .home1 > ul > li > ul > li {}
     .home > .home1 > ul > li > ul > li.h1 {
         font-weight: 700; 

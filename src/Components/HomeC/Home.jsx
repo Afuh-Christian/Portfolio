@@ -36,7 +36,14 @@ function Home() {
   return (
     <>
       
-  
+      <section className="home_parent"
+        style={{
+          "--bodyHeight": `${context.windowD.height}px`, 
+        ...context.color_mode
+      }}
+      >
+        
+   
       <section className="home"
         style={{
           "--bodyHeight": `${context.windowD.height}px`, 
@@ -92,7 +99,9 @@ function Home() {
 
 
 
-    </section>
+        </section>
+        
+        </section>
     </>
   )
 }
