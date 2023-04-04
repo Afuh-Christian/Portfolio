@@ -1,8 +1,326 @@
 .about{
-    /* margin-top: 300px; */
-    background-color: blue;
-    /* height:800px; */
+    background-color: var(--bodyBackground);
     height:var(--bodyHeight);
-    display: grid;
-    place-items: center;
+    color: var(--navTextColor);
+}
+
+
+.aboutin {
+    /* width: 70%; */
+    background-color: var(--bodyBackground);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 140px; 
+}
+.aboutin > ul.intro{
+    padding: 0;
+    margin:0; 
+    list-style: none;
+    background-color: var(--bodyBackground);
+    display: flex;
+    gap: 100px; 
+    max-width:80%;
+
+}
+.aboutin > ul.intro > li{
+    background-color: var(--bodyBackground);
+}
+.aboutin > ul.intro > li.img{
+    background-color: var(--bodyBackground);
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+.aboutin > ul.intro > li.img > img{
+    width: 270px;
+}
+.aboutin > ul.intro > li > ul{
+    padding: 0;
+    margin:0; 
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+
+}
+.aboutin > ul.intro > li > ul > li{
+    background-color: var(--navBackground);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-style: solid;
+    border-width: 1px;
+    max-width:400px;
+    padding: 15px;
+  border-radius: 10px;
+
+  border-color: var(--btnbackground);
+  box-shadow: var(--single_skill_shadow);
+  /* border-color: var(--single_skill_background); */
+  /* background-color: var(--single_skill_background); */
+
+  /* border-color: rgb(204, 205, 205); */
+    
+}
+
+.aboutin > ul.intro > li > ul > li > div{
+    font-size: 15px;
+}
+.aboutin > ul.intro > li > ul > li > div.h1{
+    font-size: 17px;
+  font-weight: 400;
+  background-color:var(--btnbackground);
+  /* background-color: azure; */
+  width: fit-content;
+  border-radius: 10px;
+  padding: 4px 15px 4px 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.aboutin > ul.intro2 {
+    padding: 0;
+    margin:0; 
+    list-style: none;
+    /* max-width:80%; */
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    gap:30px; 
+    padding-top: 30px;
+    padding-bottom: 50px;
+    max-width:80%;
+}
+.aboutin > ul.intro2 > li{
+
+    background-color: var(--navBackground);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-style: solid;
+    border-width: 1px;
+    max-width:770px;
+    padding: 15px;
+  border-radius: 10px;
+
+  border-color: var(--btnbackground);
+  box-shadow: var(--single_skill_shadow);
+
+
+}
+.aboutin > ul.intro2 > li > div{
+    font-size: 15px;
+}
+.aboutin > ul.intro2 > li > div.h1{
+
+    font-size: 17px;
+    font-weight: 400;
+    background-color:var(--btnbackground);
+    /* background-color: azure; */
+    width: fit-content;
+    border-radius: 10px;
+    padding: 4px 15px 4px 15px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:800px) {
+    
+
+    .about{
+        background-color: var(--bodyBackground);
+        height:var(--bodyHeight);
+        color: var(--navTextColor);
+    }
+    
+    
+    .aboutin {
+        /* width: 70%; */
+        background-color: var(--bodyBackground);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 140px; 
+    }
+    .aboutin > ul.intro{
+        padding: 0;
+        margin:0; 
+        list-style: none;
+        background-color: var(--bodyBackground);
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 70px; 
+        max-width:80%;
+    
+    }
+    .aboutin > ul.intro > li{
+        background-color: var(--bodyBackground);
+    }
+    .aboutin > ul.intro > li.img{
+        background-color: var(--bodyBackground);
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+    }
+    .aboutin > ul.intro > li.img > img{
+        width: 270px;
+    }
+    .aboutin > ul.intro > li > ul{
+        padding: 0;
+        margin:0; 
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+    
+    }
+    .aboutin > ul.intro > li > ul > li{
+        background-color: var(--navBackground);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border-style: solid;
+        border-width: 1px;
+        max-width:400px;
+        padding: 15px;
+      border-radius: 10px;
+    
+      border-color: var(--btnbackground);
+      box-shadow: var(--single_skill_shadow);
+      /* border-color: var(--single_skill_background); */
+      /* background-color: var(--single_skill_background); */
+    
+      /* border-color: rgb(204, 205, 205); */
+        
+    }
+    
+    .aboutin > ul.intro > li > ul > li > div{
+        font-size: 15px;
+    }
+    .aboutin > ul.intro > li > ul > li > div.h1{
+        font-size: 17px;
+      font-weight: 400;
+      background-color:var(--btnbackground);
+      /* background-color: azure; */
+      width: fit-content;
+      border-radius: 10px;
+      padding: 4px 15px 4px 15px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .aboutin > ul.intro2 {
+        padding: 0;
+        margin:0; 
+        list-style: none;
+        /* max-width:80%; */
+        /* background-color: yellow; */
+        display: flex;
+        flex-direction: column;
+        gap:30px; 
+        padding-top: 30px;
+        padding-bottom: 50px;
+        max-width:80%;
+    }
+    .aboutin > ul.intro2 > li{
+    
+        background-color: var(--navBackground);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border-style: solid;
+        border-width: 1px;
+        max-width:770px;
+        padding: 15px;
+      border-radius: 10px;
+    
+      border-color: var(--btnbackground);
+      box-shadow: var(--single_skill_shadow);
+    
+    
+    }
+    .aboutin > ul.intro2 > li > div{
+        font-size: 15px;
+    }
+    .aboutin > ul.intro2 > li > div.h1{
+    
+        font-size: 17px;
+        font-weight: 400;
+        background-color:var(--btnbackground);
+        /* background-color: azure; */
+        width: fit-content;
+        border-radius: 10px;
+        padding: 4px 15px 4px 15px;
+    
+    }
+    
+
+
 }
