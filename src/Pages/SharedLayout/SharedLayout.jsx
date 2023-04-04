@@ -7,7 +7,8 @@ export const NewContext = createContext()
 function SharedLayout() {
   const navTextColor = "black"
   const navTextHighlightColor = "rgb(159, 158, 158)"
-  // const [local, setOn] = useState(false)
+
+  // Code of light and dark mode ..... 
   const [on, setOn] = useState(
     JSON.parse(localStorage.getItem('ligth_or_dark_mode')) === null ? false :  JSON.parse(localStorage.getItem('ligth_or_dark_mode'))
   )
@@ -77,7 +78,7 @@ const light_mode =
     dark_mode
   )
 
-
+// Code of light and dark mode ..... 
   useEffect(() => {
     const local = JSON.parse(localStorage.getItem('ligth_or_dark_mode'))
     if (local === null) {

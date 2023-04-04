@@ -66,6 +66,7 @@ function Nav() {
             <div className="c"
               onClick={
                 () => {
+                  // Code of light and dark mode ..... 
                   localStorage.setItem('ligth_or_dark_mode', JSON.stringify(!context.on))
                   context.setOn(!context.on)
                 }
