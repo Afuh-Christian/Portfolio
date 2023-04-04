@@ -11,6 +11,7 @@
     background-color: var(--bodyBackground); 
     color: var(--navTextColor);
     /* height:var(--bodyHeight); */
+    height: auto;
     display: grid;
     place-items: center;
     
@@ -98,6 +99,7 @@ box-shadow: var(--single_skill_shadow);
         color: var(--navTextColor);
         display: grid;
         place-items: center;
+        height: auto;
         /* height:var(--bodyHeight); */
         }
     .skills > ul {

@@ -5,9 +5,7 @@ import Nav from '../../Components/NavC/Nav'
 export const NewContext = createContext() 
 
 function SharedLayout() {
-  const navTextColor = "black"
-  const navTextHighlightColor = "rgb(159, 158, 158)"
-
+ 
   // Code of light and dark mode ..... 
   const [on, setOn] = useState(
     JSON.parse(localStorage.getItem('ligth_or_dark_mode')) === null ? false :  JSON.parse(localStorage.getItem('ligth_or_dark_mode'))
@@ -22,7 +20,7 @@ useEffect(() => {
         height: window.innerHeight,
         width: window.innerWidth
     }))
-}, [windowD.width, windowD.height])
+}, [ windowD.width , windowD.height])
 
 console.log(windowD.height + "ne")
 

@@ -9,7 +9,13 @@ function Contact() {
 
   return (
     <>
-
+    
+      <section className="contact_parent"
+      style={{
+          "--bodyHeight": `${context.windowD.height}px`, 
+            ...context.color_mode
+          }}>
+    
       <section className="contact"
         style={{
           "--bodyHeight": `${context.windowD.height}px`, 
@@ -65,7 +71,8 @@ function Contact() {
       </ul>
         
     </section>
-    </>
+    </section>
+      </>
   )
 }
 
