@@ -1,4 +1,4 @@
-import React , {useContext} from 'react'
+import React , {useContext, useEffect} from 'react'
 import { NewContext } from '../../Pages/SharedLayout/SharedLayout'
 
 import "./About.css"
@@ -8,7 +8,7 @@ import "./About.css"
 function About() {
 
   const context = useContext(NewContext)
- console.log(context.color_mode["--bodyHeight"] + "tooooadadfa")
+
   return (
     <>
       <section className="about"

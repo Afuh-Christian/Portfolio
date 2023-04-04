@@ -1,5 +1,5 @@
 import "./Nav.css"
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 
 import {NavLink, useNavigate} from "react-router-dom"
 import { NewContext } from "../../Pages/SharedLayout/SharedLayout"
@@ -33,10 +33,8 @@ function Nav() {
 
 // Nav bar responsive 
  function ShowBar(){
-  setShow(!show)
+   setShow(!show)
 }
-
-
 
   return (
   <>
@@ -67,7 +65,10 @@ function Nav() {
         
             <div className="c"
               onClick={
-                () => { context.setOn(!context.on) }
+                () => {
+                  localStorage.setItem('ligth_or_dark_mode', JSON.stringify(!context.on))
+                  context.setOn(!context.on)
+                }
             }
               style={{transform: context.on? "translateX(66%)" : "translateX(0%)" , transitionDuration: "0.6s"}}
             >
