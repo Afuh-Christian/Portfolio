@@ -35,7 +35,7 @@ function About() {
             </ul>
             </li>
             <li className="img">
-              <img src="Image/github.svg" alt="" />
+              <img src="Image/afuh_about.svg" alt="" />
             </li>
           </ul>
           

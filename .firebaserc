@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "t-app-id"
-  }
+    "default": "t-app-id",
+    "build": "chris-webapp"
+  },
+  "targets": {},
+  "etags": {}
 }

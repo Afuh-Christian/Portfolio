@@ -63,20 +63,23 @@ function Home() {
                 
                 <li className="txt">
                 My name is  <span>Afuh Christian</span> I’m a software developer 
-                specialized in the front end . I'm fluent in  English language ,  good at working with teams and I can go solo when required. 
+                specialized in the front end . I'm fluent in  English language ,  a good team player and I'm also able to work under pressure. 
 
                 </li>
                 <li className="git_ln">
-                  <BsGithub/>
-                  <BsLinkedin />
+                 <a href="https://www.github.com/Afuh-Christian/" target="_blank">  <BsGithub/> </a>
+                 <a href="https://www.linkedin.com/mwlite/in/afuh-christian-forkoum-375816243/" target="_blank">   <BsLinkedin /> </a>
+                  
                 
                   {/* <img src="Image/github.svg" alt="" /> */} 
                   {/* <img src="Image/filled.svg" alt="" /> */}
                 </li>
               </ul>
             </li>
-           <li className="profile">
-            <img src="Image/github.svg" alt=""/>
+              <li className="profile">
+               
+                  <img src="Image/afuh_home.svg" alt="" />
+                 
            </li>
           </ul>
         </section>

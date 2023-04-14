@@ -35,7 +35,7 @@ function Contact() {
                 <ul>
                   <li className="txt"> <div> Email</div></li>
                   <li className='ima'>
-                  <img src="Image/gmail.svg" alt=""/>                    
+                 <a href="https://afuhchristian10@gmail.com" target="_blank">  <img src="Image/gmail.svg" alt=""/>  </a>                    
                   </li>
                 </ul>
               </li>
@@ -60,8 +60,9 @@ function Contact() {
                   <li className="txt"> <div> Social Media</div></li>
                   <li className='ima'>
                     <div >
-                  <img src="Image/whatsapp.svg" alt=""/>                    
-                  <img src="Image/facebook.svg" alt=""/>                    
+                 {/* <a href="https://wa.me/qr/DHNPHYO4JBXED1/">  <img src="Image/whatsapp.svg" alt=""/>  </a>                    */}
+                 <a href="https://wa.link/bdlq8r" target="_blank">  <img src="Image/whatsapp.svg" alt=""/>  </a>                   
+                 <a href="https://www.facebook.com/afuhchristian.forkoum"> <img src="Image/facebook.svg" alt=""/>   </a>                 
                   </div>
                   </li>
                 </ul>
