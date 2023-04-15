@@ -3,35 +3,35 @@ import { NewContext } from '../../Pages/SharedLayout/SharedLayout'
 import Nav from '../NavC/Nav'
 import "./Project.css"
 
+const projects = [ ]
+// const projects = [
+//   {
+//     projectType: "Website Projects",
+//     list: [
+//       {
+//         tool: {
+//           name: "Next js", 
+//           logo: "Image/nextjs.svg"
+//         },
+//         websitename: "Queenzee.com", 
+//         description: "A site for selling milinary products such as designer  caps , bags , wallets etc world wide "
+//         , logo: "Image/projects/queen.svg", 
+//         link: "visit site "
+//       },
+//       {
+//         tool: {
+//           name: "Next js", 
+//           logo: "Image/nextjs.svg"
+//         },
+//         websitename: "Queenzee.com", 
+//         description: "A site for selling milinary products such as designer  caps , bags , wallets etc world wide "
+//         , logo: "Image/projects/queen.svg", 
+//         link: "visit site "
+//       },
+//     ]  
+//   },
 
-const projects = [
-  {
-    projectType: "Website Projects",
-    list: [
-      {
-        tool: {
-          name: "Next js", 
-          logo: "Image/nextjs.svg"
-        },
-        websitename: "Queenzee.com", 
-        description: "A site for selling milinary products such as designer  caps , bags , wallets etc world wide "
-        , logo: "Image/projects/queen.svg", 
-        link: "visit site "
-      },
-      {
-        tool: {
-          name: "Next js", 
-          logo: "Image/nextjs.svg"
-        },
-        websitename: "Queenzee.com", 
-        description: "A site for selling milinary products such as designer  caps , bags , wallets etc world wide "
-        , logo: "Image/projects/queen.svg", 
-        link: "visit site "
-      },
-    ]  
-  },
-
-]
+// ]
 
 
 
@@ -49,7 +49,18 @@ function Project() {
       <section className="project"
        
       >
-      <ul>
+          <ul>
+            
+            {projects.length === 0 ? <> <h1> All projects are still on my github repo    <a href="https://github.com/Afuh-Christian/"></a>   </h1>
+            
+              <div>"Portfolio(This website)" with react js  <a href="https://github.com/Afuh-Christian/Portfolio">Link</a>  </div>
+              <div>"Queenzee" with next js  <a href="https://github.com/Afuh-Christian/Cleanam">Link</a>  </div>
+              <div>"Cleanam" with html and css <a href="https://github.com/Afuh-Christian/Queenzee">Link</a></div>
+              {/* <div>Ziiface with React and django</div> */}
+            </> : <>
+      
+
+
       {projects.map((projecttype) => (
    
 
@@ -87,6 +98,12 @@ function Project() {
  
 
       ) )}
+
+</>
+
+    }
+
+            
     </ul>
         </section>
         </section>
